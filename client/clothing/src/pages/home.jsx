@@ -36,7 +36,7 @@ export default function Home() {
           <Logout />
         </div>
       </nav>
-      <section id="hero" className="w-full h-screen text-center">
+      <section id="hero" className="w-full text-center">
         <div className="flex flex-col items-center gap-8">
           <h1 className="text-7xl font-black pt-40 ">
             Discover Your Perfect Look
@@ -48,7 +48,7 @@ export default function Home() {
           <LogIn />
         </div>
 
-        <div className="w-full flex gap-8 justify-center pt-20 items-center">
+        <div className="w-full flex gap-8 justify-center pt-20 items-center ">
           <div>
             <p className="py-2">1. Your Photo</p>
             <img
