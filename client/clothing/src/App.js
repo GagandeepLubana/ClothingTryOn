@@ -3,6 +3,8 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
+import LoginButton from "./pages/auth/LogInButton";
+import LogOutButton from "./pages/auth/LogOutButton";
 
 function App() {
   return (
