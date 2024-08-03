@@ -11,7 +11,10 @@ import Footer from "../components/Footer";
 import FAQ from "../components/FAQ";
 import About from "../components/About";
 
+
 export default function Home() {
+
+
   return (
     <>
       <nav className="fixed top-0 left-0 w-full flex justify-between p-6">
@@ -33,7 +36,6 @@ export default function Home() {
             Pricing
           </a>
           <LogIn />
-          <Logout />
         </div>
       </nav>
       <section id="hero" className="w-full text-center">
