@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true}))
 app.use(cors());
 
-app.use("/", (req, res) => {})
+app.use("/outfit", (req, res) => {})
 
 const PORT = process.env.PORT || 3001;
 
