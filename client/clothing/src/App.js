@@ -1,8 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
-import LoginButton from "./pages/auth/LogInButton";
-import LogOutButton from "./pages/auth/LogOutButton";
 import Main from "./pages/TryOn";
 
 function App() {

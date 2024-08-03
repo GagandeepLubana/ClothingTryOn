@@ -11,10 +11,7 @@ import Footer from "../components/Footer";
 import FAQ from "../components/FAQ";
 import About from "../components/About";
 
-
 export default function Home() {
-
-
   return (
     <>
       <nav className="fixed top-0 left-0 w-full flex justify-between p-6">

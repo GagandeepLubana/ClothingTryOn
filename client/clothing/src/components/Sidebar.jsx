@@ -65,7 +65,7 @@ export default function Sidebar() {
             Settings
           </a>
         </div>
-        <Logout/>
+        <Logout />
       </div>
     </div>
   );
