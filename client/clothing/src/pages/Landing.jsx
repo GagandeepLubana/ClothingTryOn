@@ -1,38 +1,75 @@
 import React from "react";
+import LogIn from "../components/LogIn";
+import icon from "../images/icon.png";
+import model from "../images/model.jpg";
+import garment from "../images/garment.jpg";
+import converted from "../images/converted.jpg";
+import plus from "../images/plus.png";
+import equals from "../images/equals.png";
 
 export default function Landing() {
   return (
     <>
-      {/* temp */}
-      <section className="sticky bg-[#262626] flex justify-between items-center top-0 text-white pt-2">
-        <div className="flex flex-row space-x-3 justify-center items-center pl-12">
-          <p>IMG HERE</p>
-          <h1 className="text-white font-bold text-2xl">FittingRoom</h1>
-        </div>
-        <nav className="flex flex-row justify-center space-x-4 px-3 items-center">
-          <a className="text-white hover:underline hover:text-white">
+      <nav className="fixed top-0 left-0 w-full flex justify-between p-6">
+        <a className="flex gap-2 font-black text-xl hover:text-white" href="/">
+          <img src={icon} alt="Logo" className="w-[24px] h-[24px]"></img>
+          <p>FittingRoom</p>
+        </a>
+        <div className="flex gap-4 items-center">
+          <a href="/examples" className="hover:text-white">
             Examples
           </a>
-          <a>About</a>
-          <a>Pricing</a>
-          <a>FAQ</a>
-          <button className="rounded-xl w-full h-full px-9 py-2 bg-purple-900 flex justify-center items-center">
-            <h4>Try Now</h4>
-          </button>
-        </nav>
+          <a href="/about" className="hover:text-white">
+            About
+          </a>
+          <a href="/faq" className="hover:text-white">
+            FAQ
+          </a>
+          <a href="/pricing" className="hover:text-white">
+            Pricing
+          </a>
+          <LogIn />
+        </div>
+      </nav>
+      <section id="hero" className="w-screen h-screen text-center">
+        <div className="flex flex-col items-center gap-8">
+          <h1 className="text-7xl font-black pt-40 ">
+            Discover Your Perfect Look
+          </h1>
+          <p className="text-xl max-w-[50ch]">
+            Experience the future of fashion. Try on clothes from your favorite
+            brands, all from the comfort of your home.
+          </p>
+          <LogIn />
+        </div>
+
+        <div className="w-full flex gap-8 justify-center pt-20 items-center">
+          <div>
+            <p className="py-2">1. Your Photo</p>
+            <img src={model} alt="Logo" className="rounded-3xl h-[400px]"></img>
+          </div>
+          <img src={plus} alt="Logo" className=" rounded-3xl h-[50px]"></img>
+
+          <div>
+            <p className="py-2">2. Your Garment of Choice</p>
+            <img
+              src={garment}
+              alt="Logo"
+              className="rounded-3xl h-[400px]"
+            ></img>
+          </div>
+          <img src={equals} alt="Logo" className="h-[30px]"></img>
+
+          <div>
+            <p className="py-2">3. The Result</p>
+            <img
+              src={converted}
+              alt="Logo"
+              className="rounded-3xl h-[400px]"
+            ></img>
+          </div>
+        </div>
       </section>
-      <body className="pt-24 w-full flex flex-col items-center text-white">
-        <h1 className="font-bold text-center mb-10 text-5xl">
-          Discover Your Perfect Look
-        </h1>
-        <h5 className="w-1/2 text-center text mb-5">
-          Experience the future of fashion. Try on clothers from your favourite
-          brands, all from the comfort of your home.{" "}
-        </h5>
-        <button className="rounded-xl px-7 bg-purple-900 text-black py-2 text-sm">
-          Try Now
-        </button>
-      </body>
     </>
   );
 }
