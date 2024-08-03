@@ -6,6 +6,7 @@ import history from "../images/icons/history.png";
 import help from "../images/icons/help.png";
 import profile from "../images/icons/profile.png";
 import settings from "../images/icons/settings.png";
+import Logout from "./Logout";
 
 export default function Sidebar() {
   return (
@@ -64,6 +65,7 @@ export default function Sidebar() {
             Settings
           </a>
         </div>
+        <Logout/>
       </div>
     </div>
   );
