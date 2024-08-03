@@ -36,7 +36,7 @@ export default function Home() {
           <LogIn />
         </div>
       </nav>
-      <section id="hero" className="w-full text-center">
+      <section id="hero" className="w-full text-center px-4">
         <div className="flex flex-col items-center gap-8">
           <h1 className="text-7xl font-black mt-40 bg-gradient-to-b from-[#F0ACFF] to-[#A8B5FF] inline-block text-transparent bg-clip-text">
             Step Into the Future of Fashion
@@ -67,11 +67,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex gap-8 justify-center pt-20 items-center ">
+        <div className="w-full flex gap-8 justify-center pt-20 items-center">
           <img
             src={demo}
             alt="Logo"
-            className="rounded-3xl w-full max-w-[951px] aspect-[951/326]"
+            className="w-full max-w-[951px] aspect-[951/326]"
           ></img>
         </div>
       </section>

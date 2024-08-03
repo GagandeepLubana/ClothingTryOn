@@ -11,7 +11,7 @@ import Logout from "./Logout";
 export default function Sidebar() {
   return (
     <div className="w-[250px] h-screen p-2">
-      <div className="w-full h-full flex flex-col bg-secondary rounded-lg outline outline-1 outline-gray-500 p-2">
+      <div className="w-full h-full flex flex-col bg-secondary rounded-lg outline outline-1 outline-gray-500/40 p-2">
         <a
           className="flex gap-2 font-black text-xl hover:text-white p-2"
           href="/"

@@ -8,7 +8,7 @@ export default function SelectPose({ selectedImage, onImageUpload }) {
   };
 
   return (
-    <div className="flex flex-col w-fit h-fit gap-3 p-2 rounded-lg outline outline-1 outline-[#3F3F3F] bg-tertiary justify-center items-center">
+    <div className="flex flex-col w-fit h-fit gap-3 p-5 rounded-3xl outline outline-1 outline-[#3F3F3F] bg-tertiary justify-center items-center">
       <p className="font-bold text-lg">Choose your pose</p>
       <img
         src={selectedImage}

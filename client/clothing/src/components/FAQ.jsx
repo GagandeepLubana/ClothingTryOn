@@ -3,12 +3,12 @@ import React from "react";
 export default function FAQ() {
   return (
     <section className="space-y-4 max-w-screen-md mx-auto py-40 px-4" id="faq">
-      <h2 className="text-3xl font-bold text-center pb-8">
+      <h2 className="text-3xl font-bold text-center pb-8 flex justify-center bg-gradient-to-b from-[#F0ACFF] to-[#A8B5FF] inline-block text-transparent bg-clip-text">
         Frequently Asked Questions
       </h2>
 
       <details className="group [&_summary::-webkit-details-marker]:hidden">
-        <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-100 p-4 text-gray-900">
+        <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg border-gray-500/20 bg-secondary p-4 text-gray-300">
           <h2 className="font-medium">What is this service about?</h2>
 
           <svg
@@ -36,7 +36,7 @@ export default function FAQ() {
       </details>
 
       <details className="group [&_summary::-webkit-details-marker]:hidden">
-        <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-100 p-4 text-gray-900">
+        <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg border-gray-500/20 bg-secondary p-4 text-gray-300">
           <h2 className="font-medium">How do I use the service?</h2>
 
           <svg
@@ -70,7 +70,7 @@ export default function FAQ() {
       </details>
 
       <details className="group [&_summary::-webkit-details-marker]:hidden">
-        <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-100 p-4 text-gray-900">
+        <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg border-gray-500/20 bg-secondary p-4 text-gray-300">
           <h2 className="font-medium">
             How can companies integrate this into their e-commerce site?
           </h2>
@@ -99,7 +99,7 @@ export default function FAQ() {
       </details>
 
       <details className="group [&_summary::-webkit-details-marker]:hidden">
-        <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-100 p-4 text-gray-900">
+        <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg border-gray-500/20 bg-secondary p-4 text-gray-300">
           <h2 className="font-medium">
             What are the environmental benefits of using this service?
           </h2>
