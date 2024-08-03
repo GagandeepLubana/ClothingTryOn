@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const outfitSchema = mongoose.Schema({
     title: String,
-    creater: String,
+    creator: String,
     tags: [String],
     selectedFile: String,
     likeCount: {
