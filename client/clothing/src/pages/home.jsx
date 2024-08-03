@@ -2,6 +2,7 @@ import React from "react";
 import LogIn from "../components/LogIn";
 import icon from "../images/icon.png";
 import model from "../images/model.jpg";
+import demo from "../images/demo.png";
 import garment from "../images/garment.jpg";
 import converted from "../images/converted.jpg";
 import plus from "../images/plus.png";
@@ -67,34 +68,11 @@ export default function Home() {
         </div>
 
         <div className="w-full flex gap-8 justify-center pt-20 items-center ">
-          <div>
-            <p className="py-2">1. Your Photo</p>
-            <img
-              src={model}
-              alt="Logo"
-              className="rounded-3xl w-[300px] aspect-[3/4]"
-            ></img>
-          </div>
-          <img src={plus} alt="Logo" className=" rounded-3xl h-[50px]"></img>
-
-          <div>
-            <p className="py-2">2. Your Garment of Choice</p>
-            <img
-              src={garment}
-              alt="Logo"
-              className="rounded-3xl w-[300px] aspect-[3/4]"
-            ></img>
-          </div>
-          <img src={equals} alt="Logo" className="h-[30px]"></img>
-
-          <div>
-            <p className="py-2">3. The Result</p>
-            <img
-              src={converted}
-              alt="Logo"
-              className="rounded-3xl w-[300px] aspect-[3/4]"
-            ></img>
-          </div>
+          <img
+            src={demo}
+            alt="Logo"
+            className="rounded-3xl w-full max-w-[951px] aspect-[951/326]"
+          ></img>
         </div>
       </section>
       <About />
