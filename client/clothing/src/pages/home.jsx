@@ -14,22 +14,22 @@ import About from "../components/About";
 export default function Home() {
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full flex justify-between p-6">
-        <a className="flex gap-2 font-black text-xl hover:text-white" href="/">
+      <nav className="fixed top-0 left-0 w-full flex justify-between p-6 backdrop-blur-sm bg-primary/40">
+        <a
+          className="flex gap-2 font-black text-xl hover:text-white items-center"
+          href="/"
+        >
           <img src={icon} alt="Logo" className="w-[24px] h-[24px]"></img>
           <p>FittingRoom</p>
         </a>
         <div className="flex gap-4 items-center">
-          <a href="/examples" className="hover:text-white">
-            Examples
-          </a>
-          <a href="/about" className="hover:text-white">
+          <a href="#about" className="hover:text-white">
             About
           </a>
-          <a href="/faq" className="hover:text-white">
+          <a href="#faq" className="hover:text-white">
             FAQ
           </a>
-          <a href="/pricing" className="hover:text-white">
+          <a href="#faq" className="hover:text-white">
             Pricing
           </a>
           <LogIn />
@@ -37,14 +37,33 @@ export default function Home() {
       </nav>
       <section id="hero" className="w-full text-center">
         <div className="flex flex-col items-center gap-8">
-          <h1 className="text-7xl font-black pt-40 ">
-            Discover Your Perfect Look
+          <h1 className="text-7xl font-black mt-40 bg-gradient-to-b from-[#F0ACFF] to-[#A8B5FF] inline-block text-transparent bg-clip-text">
+            Step Into the Future of Fashion
           </h1>
           <p className="text-xl max-w-[50ch]">
             Experience the future of fashion. Try on clothes from your favorite
             brands, all from the comfort of your home.
           </p>
-          <LogIn />
+          <div className="flex gap-5">
+            <LogIn />
+            <a variant="text" className="flex items-center gap-2" href="#about">
+              Read More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <div className="w-full flex gap-8 justify-center pt-20 items-center ">

@@ -8,7 +8,7 @@ import personal from "../images/icons/personal.png";
 
 export default function About() {
   return (
-    <section className=" text-textPrimary">
+    <section className="pt-20 text-textPrimary" id="about">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-lg text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">
@@ -18,15 +18,13 @@ export default function About() {
           <p className="mt-4 text-gray-300">
             {`Say goodbye to the frustration of online shopping with our
             revolutionary AI-driven fitting solution. Upload a photo and preview
-            how any garment looks on you before making a purchase. No more
-            buyer's remorse—just perfect fits and smarter shopping. Experience
-            it now!`}
+            how any garment looks on you before making a purchase.`}
           </p>
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <a
-            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            className="block rounded-xl border border-gray-500/20 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="#"
           >
             <img src={photo} alt="photo" className="w-[30px]"></img>
@@ -42,7 +40,7 @@ export default function About() {
           </a>
 
           <a
-            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            className="block rounded-xl border border-gray-500/20 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="#"
           >
             <img src={clothes} alt="clothes" className="w-[30px]"></img>
@@ -58,7 +56,7 @@ export default function About() {
           </a>
 
           <a
-            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            className="block rounded-xl border border-gray-500/20 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="#"
           >
             <img src={vision} alt="clothes" className="w-[30px]"></img>
@@ -75,7 +73,7 @@ export default function About() {
           </a>
 
           <a
-            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            className="block rounded-xl border border-gray-500/20 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="#"
           >
             <img src={ecom} alt="clothes" className="w-[30px]"></img>
@@ -92,7 +90,7 @@ export default function About() {
           </a>
 
           <a
-            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            className="block rounded-xl border border-gray-500/20 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="#"
           >
             <img src={natural} alt="clothes" className="w-[30px]"></img>
@@ -109,7 +107,7 @@ export default function About() {
           </a>
 
           <a
-            className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            className="block rounded-xl border border-gray-500/20 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="#"
           >
             <img src={personal} alt="clothes" className="w-[30px]"></img>

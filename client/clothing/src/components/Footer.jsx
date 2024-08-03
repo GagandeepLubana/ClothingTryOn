@@ -3,7 +3,7 @@ import icon from "../images/icon.png";
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer id="footer">
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-8 lg:px-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="text-textPrimary">
@@ -75,25 +75,25 @@ export default function Footer() {
                   href="#"
                   className="text-gray-500 transition hover:opacity-75"
                 >
-                  Company Review
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-500 transition hover:opacity-75"
-                >
-                  Accounts Review
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-500 transition hover:opacity-75"
-                >
                   E-Commerce Integration
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-500 transition hover:opacity-75"
+                >
+                  Try the Demo
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-500 transition hover:opacity-75"
+                >
+                  Review
                 </a>
               </li>
             </ul>
@@ -105,7 +105,7 @@ export default function Footer() {
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   className="text-gray-500 transition hover:opacity-75"
                 >
                   About
@@ -114,7 +114,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  href="#"
+                  href="#faq"
                   className="text-gray-500 transition hover:opacity-75"
                 >
                   Meet the Team
@@ -129,7 +129,7 @@ export default function Footer() {
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   className="text-gray-500 transition hover:opacity-75"
                 >
                   About
@@ -138,7 +138,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  href="#"
+                  href="#faq"
                   className="text-gray-500 transition hover:opacity-75"
                 >
                   FAQs
@@ -185,7 +185,7 @@ export default function Footer() {
           &copy; 2024. FittingRoom. All rights reserved.
           <a
             className="text-teal-200"
-            href="https://hackthe6ix2024.devpost.com/"
+            href="https://devpost.com/software/fittingroom-d85nrt?ref_content=user-portfolio&ref_feature=in_progress"
             rel="noreferrer"
             target="_blank"
           >
