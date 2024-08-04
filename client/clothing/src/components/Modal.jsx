@@ -1,9 +1,54 @@
 import React, { useRef, useState } from "react";
+import axios from "axios";
+import { useAuth0 } from "@auth0/auth0-react";
 
-export default function Modal({ selectedImage, setModalOpened }) {
-  const fileInputRef = React.useRef();
+
+export default function Modal({ selectedImage, setModalOpened, poseImage, garmentImage }) {
+  const { user } = useAuth0();
 
   const handleClick = () => {};
+
+  const handleShare = async () => {
+    const data = {
+      username: user.name,
+      userId: user.sub,
+      poseURL: poseImage, 
+      garmentURL: garmentImage,
+      outputURL: selectedImage,
+      Shared: true,
+
+    }
+
+    try {
+      await axios.post("http://localhost:3001/outfit", data)
+      alert("Outfit saved.")
+      setModalOpened(false);
+    } catch (error) {
+      console.error(error);
+    }
+
+  }
+
+  const handleSave = async () => {
+
+    const data = {
+      username: user.name,
+      userId: user.sub,
+      poseURL: poseImage, 
+      garmentURL: garmentImage,
+      outputURL: selectedImage,
+      Shared: false,
+
+    }
+
+    try {
+      await axios.post("http://localhost:3001/outfit", data)
+      alert("Outfit saved.")
+      setModalOpened(false);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   return (
     <div className="fixed top-0 left-[250px] w-screen h-screen bg-primary">
@@ -18,13 +63,13 @@ export default function Modal({ selectedImage, setModalOpened }) {
           className="rounded-xl w-[300px] aspect-[3/4]"
         ></img>
         <button
-          onClick={handleClick}
+          onClick={handleShare}
           className="p-2 bg-secondary w-full rounded-xl"
         >
           Share
         </button>
         <button
-          //   onClick={handleClick}
+             onClick={handleSave}
           className="p-2 bg-secondary w-full rounded-xl"
         >
           Save

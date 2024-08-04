@@ -1,20 +1,22 @@
 import mongoose from "mongoose";
 
 const outfitSchema = mongoose.Schema({
-    title: String,
-    creator: String,
-    tags: [String],
-    selectedFile: String,
-    likeCount: {
-        type: Number,
-        default: 0,
-    },
-    createdAt: {
-        type: Date,
-        default: new Date(),
-    }
-})
+  username: String,
+  userId: String,
+  poseURL: String,
+  garmentURL: String,
+  outputURL: String,
+  Shared: Boolean,
+  likeCount: {
+    type: Number,
+    default: 0,
+  },
+  createdAt: {
+    type: Date,
+    default: new Date(),
+  },
+});
 
 const outfitModel = mongoose.model("Outfit", outfitSchema);
 
-export default outfitModel
+export default outfitModel;
