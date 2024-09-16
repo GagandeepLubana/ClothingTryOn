@@ -2,7 +2,7 @@
 
 This is the Repository For Our Frontend. Our source code for doing diffusion is hosted on [HuggingFace Spaces](https://huggingface.co/spaces/amarasep/ClothingTryonModel/tree/main)
 
-https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/976/250/datas/gallery.jpg 
+![GitHub profile picture](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/976/250/datas/gallery.jpg) 
 
 # FittingRoom: Virtual Try-On with AI
 
